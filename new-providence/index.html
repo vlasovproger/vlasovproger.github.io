@@ -98,12 +98,12 @@
       </section>
       <section id="iphone-feature">
         <div class="container">
-          <picture >
-            <source 
+          <picture>
+            <source
               type="image/webp"
               srcset="img/webp/iPhonePassCodeScreen.webp"
             />
-            <img 
+            <img
               src="img/clean/iPhonePassCodeScreen.png"
               alt="iPhone screen"
               class="telephone"
@@ -147,10 +147,7 @@
                       type="image/webp"
                       srcset="img/webp/Dropbox_Logo.webp"
                     />
-                    <img
-                      alt="Dropbox Logo"
-                      src="img/clean/Dropbox_Logo.png"
-                    />
+                    <img alt="Dropbox Logo" src="img/clean/Dropbox_Logo.png" />
                   </picture>
                 </li>
                 <li>
@@ -174,7 +171,6 @@
               alt="world-map"
               data-aos="slide-left"
               data-aos-duration="800"
-              
               src="img/clean/World_Map.png"
             />
           </picture>
@@ -188,20 +184,13 @@
           <li>
             <picture class="screenshot">
               <source type="image/webp" srcset="img/webp/img-1.webp" />
-              <img
-                alt="screenshot"
-                src="img/clean/img-1.png"
-              />
+              <img alt="screenshot" src="img/clean/img-1.png" />
             </picture>
           </li>
           <li>
             <picture class="screenshot">
               <source type="image/webp" srcset="img/webp/img-2.webp" />
-              <img
-                alt="screenshot"
-                src="img/clean/img-2.png"
-                
-              />
+              <img alt="screenshot" src="img/clean/img-2.png" />
             </picture>
           </li>
           <li>
@@ -217,19 +206,13 @@
           <li>
             <picture class="screenshot">
               <source type="image/webp" srcset="img/webp/img-4.webp" />
-              <img
-                alt="screenshot"
-                src="img/clean/img-4.png"
-              />
+              <img alt="screenshot" src="img/clean/img-4.png" />
             </picture>
           </li>
           <li>
             <picture class="screenshot">
               <source type="image/webp" srcset="img/webp/img-5.webp" />
-              <img
-                alt="screenshot"
-                src="img/clean/img-5.png"
-              />
+              <img alt="screenshot" src="img/clean/img-5.png" />
             </picture>
           </li>
         </ul>
@@ -263,34 +246,16 @@
             </button>
             <div class="avatars">
               <picture class="avatar">
-                <source
-                  type="image/webp"
-                  srcset="img/webp/avatar-1.webp"
-                />
-                <img
-                  alt="avatar-1"
-                  src="img/clean/avatar-1.png"
-                />
+                <source type="image/webp" srcset="img/webp/avatar-1.webp" />
+                <img alt="avatar-1" src="img/clean/avatar-1.png" />
               </picture>
               <picture class="avatar current">
-                <source
-                  type="image/webp"
-                  srcset="img/webp/avatar-2.webp"
-                />
-                <img
-                  alt="avatar-2"
-                  src="img/clean/avatar-2.png"
-                />
+                <source type="image/webp" srcset="img/webp/avatar-2.webp" />
+                <img alt="avatar-2" src="img/clean/avatar-2.png" />
               </picture>
               <picture class="avatar">
-                <source
-                  type="image/webp"
-                  srcset="img/webp/avatar-3.webp"
-                />
-                <img
-                  alt="avatar-3"
-                  src="img/clean/avatar-3.png"
-                />
+                <source type="image/webp" srcset="img/webp/avatar-3.webp" />
+                <img alt="avatar-3" src="img/clean/avatar-3.png" />
               </picture>
             </div>
           </div>
@@ -470,7 +435,48 @@
         </div>
       </div>
     </footer>
-
+    <!--Preloader -->
+    <style type="text/css">
+      #preloader > p {
+        display: none;
+      }
+      #preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 1000px;
+        background: #267df4
+          url("img/clean/three-dots.svg") center
+          center no-repeat;
+        background-size: 128px;
+      }
+    </style>
+    <div id="preloader">
+      <div id="preload"></div>
+      
+    </div>
+    <script type="text/javascript">
+      var preloader = document.getElementById("preload");
+      function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function() {
+          el.style.opacity = el.style.opacity - 0.05;
+          if (el.style.opacity <= 0.05) {
+            clearInterval(interhellopreloader);
+            preloader.style.display = "none";
+          }
+        }, 16);
+      }
+      window.onload = function() {
+        setTimeout(function() {
+          fadeOutnojquery(preloader);
+        }, 1000);
+      };
+    </script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
