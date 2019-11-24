@@ -196,11 +196,7 @@
           <li>
             <picture class="screenshot">
               <source type="image/webp" srcset="img/webp/img-3.webp" />
-              <img
-                alt="screenshot"
-                data-src="img/clean/img-3.png"
-                src="img/placeholders/img-3.png"
-              />
+              <img alt="screenshot" src="img/clean/img-3.png" />
             </picture>
           </li>
           <li>
@@ -221,7 +217,10 @@
         <h6>NewProvidence</h6>
         <h2>Get it to your smartphone</h2>
         <form>
-          <input type="email" id="email" size="30" required />
+          <label>
+            <input type="email" id="email" size="30" required />
+          </label>
+
           <button type="submmit">
             Send Invite <span class="icon icon-arrow-right"></span>
           </button>
@@ -238,10 +237,10 @@
       <section id="customers">
         <div class="slider">
           <div class="buttons">
-            <button id="prev">
+            <button id="prev" aria-label="Prev button">
               <span class="icon icon-arrow_back_ios"></span>
             </button>
-            <button id="next">
+            <button id="next" aria-label="Next button">
               <span class="icon icon-arrow_forward_ios"></span>
             </button>
             <div class="avatars">
@@ -365,13 +364,15 @@
         <div class="wrapper">
           <h2>Subscribe our newsletters</h2>
           <form>
-            <input
-              type="email"
-              id="email"
-              size="30"
-              required
-              placeholder="Your email"
-            />
+            <label>
+              <input
+                type="email"
+                id="email"
+                size="30"
+                required
+                placeholder="Your email"
+              />
+            </label>
             <button type="submmit">
               Subscribe
             </button>
@@ -383,7 +384,7 @@
     <footer id="footer">
       <div class="wrapper">
         <div class="socials">
-          <img src="img/clean/NewProvidence.svg" class="logo" />
+          <img src="img/clean/NewProvidence.svg" class="logo" alt="logo" />
 
           <p class="footer-text">
             It was some time before he obtained any answer, and the reply, when
@@ -449,15 +450,13 @@
         width: 100%;
         height: 100%;
         min-width: 1000px;
-        background: #267df4
-          url("img/clean/three-dots.svg") center
-          center no-repeat;
+        background: #267df4 url("img/clean/three-dots.svg") center center
+          no-repeat;
         background-size: 128px;
       }
     </style>
     <div id="preloader">
       <div id="preload"></div>
-      
     </div>
     <script type="text/javascript">
       var preloader = document.getElementById("preload");
