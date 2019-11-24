@@ -10,8 +10,6 @@
 
     <link rel="icon" href="img/favicon.png" />
     <meta property="og:image" content="img/@1x/preview.jpg" />
-
-    
   </head>
 
   <body>
@@ -47,15 +45,18 @@
       <div id="hero-section">
         <div id="hero-section-content">
           <div class="wrapper">
-            <h1 data-aos="fade-up" data-aos-duration="1500">
-              What happens tomorrow?
-            </h1>
-            <p data-aos="fade-up" data-aos-duration="2000">
-              The sight of the tumblers restored Bob Sawyer to a degree of
-              equanimity which he had not possessed since his interview with his
-              landlady. His face brightened up, and he began to feel quite
-              convivial.
-            </p>
+            <div class="hero-section-text">
+              <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+                What happens tomorrow?
+              </h1>
+              <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+                The sight of the tumblers restored Bob Sawyer to a degree of
+                equanimity which he had not possessed since his interview with
+                his landlady. His face brightened up, and he began to feel quite
+                convivial.
+              </p>
+            </div>
+
             <picture class="iphone-template">
               <source type="image/webp" srcset="img/webp/iPhone_6.webp" />
               <img
@@ -63,7 +64,7 @@
                 src="img/clean/iPhone_6.png"
                 data-aos="slide-up"
                 data-aos-duration="1000"
-                data-aos-delay="1000"
+                data-aos-delay="2000"
               />
             </picture>
           </div>
@@ -449,10 +450,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        min-width: 1000px;
+        min-width: 1px;
         background: #267df4 url("img/clean/three-dots.svg") center center
           no-repeat;
         background-size: 128px;
+      }
+      #hero-section {
+        display: none;
       }
     </style>
     <div id="preloader">
